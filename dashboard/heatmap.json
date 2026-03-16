@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"name": "dataset"},
+  "width": "container",
+  "height": "container",
+  "mark": {
+    "type": "rect",
+    "stroke": "#ffffff",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "customer_segment",
+      "type": "nominal",
+      "title": "",
+      "sort": ["New", "Regular", "VIP"],
+      "axis": {
+        "labelAngle": 0,
+        "domain": false,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "age_group",
+      "type": "nominal",
+      "title": "",
+      "axis": {
+        "domain": false,
+        "ticks": false
+      }
+    },
+    "color": {
+      "field": "Sum of sales_amount",
+      "type": "quantitative",
+      "scale": {"scheme": "blues"},
+      "legend": null
+    },
+    "tooltip": [
+      {"field": "customer_segment", "type": "nominal", "title": "Segment"},
+      {"field": "age_group", "type": "nominal", "title": "Age group"},
+      {"field": "Sum of sales_amount", "type": "quantitative", "title": "Total sales", "format": ",.0f"},
+      {"field": "Count of customer_key", "type": "quantitative", "title": "Nb clients", "format": ",.0f"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": null},
+    "axis": {
+      "domain": false,
+      "grid": false
+    },
+    "legend": {"orient": "right"}
+  }
+}
