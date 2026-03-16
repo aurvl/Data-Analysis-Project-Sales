@@ -191,7 +191,7 @@ This page focuses on product portfolio performance.
 
 ```bash
 git clone https://github.com/aurvl/Data-Analysis-Project-Sales.git
-cd sales_analysis
+cd Data-Analysis-Project-Sales
 ```
 
 ### 2. Create the database
