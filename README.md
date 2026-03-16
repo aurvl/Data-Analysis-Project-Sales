@@ -190,7 +190,7 @@ This page focuses on product portfolio performance.
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/aurvl/Data-Analysis-Project-Sales.git
 cd sales_analysis
 ```
 
