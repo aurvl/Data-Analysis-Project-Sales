@@ -31,7 +31,7 @@ This project addresses those questions by building a reporting layer and a dashb
 
 ## Project Structure
 
-```text
+```
 .
 ├── README.md
 ├── db
@@ -243,6 +243,8 @@ This project can help a business:
 * support data-driven commercial and marketing decisions
 
 In practice, this dashboard could be used by a sales manager, a marketing team, a category manager, or a business analyst.
+
+A pdf report is also provided at [report](dashboard/report.pdf)
 
 ---
 
